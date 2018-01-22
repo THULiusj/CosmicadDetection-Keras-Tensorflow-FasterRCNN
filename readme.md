@@ -31,6 +31,7 @@
    - 输入为数据路径，图片存储在JPEGImages中，标注存储在Annotations中。
    - 目前文件中将路径中的所有图片都设定为训练集，如果分割测试集，需要调整代码。
 - train_frcnn.py: 模型训练。
+   - get_data函数需要设置数据存储的路径(即dataset的路径)
    - 通过epoch_length和num_epochs修改训练次数和每一次的训练长度。 
    - 代码里面没有设置validation set，只针对训练集。
 - test_frcnn.py: 测试模型。
